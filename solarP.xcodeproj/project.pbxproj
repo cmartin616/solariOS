@@ -14,6 +14,8 @@
 		35409F3219D3844D00B52599 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35409F3119D3844D00B52599 /* Images.xcassets */; };
 		35409F3519D3844D00B52599 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35409F3319D3844D00B52599 /* LaunchScreen.xib */; };
 		35409F4119D3844D00B52599 /* solarPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35409F4019D3844D00B52599 /* solarPTests.m */; };
+		35409F4C19D384D200B52599 /* map_background.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 35409F4B19D384D200B52599 /* map_background.tiff */; };
+		35409F4E19D38CF300B52599 /* redXCircle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35409F4D19D38CF300B52599 /* redXCircle.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		35409F3A19D3844D00B52599 /* solarPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = solarPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35409F3F19D3844D00B52599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35409F4019D3844D00B52599 /* solarPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = solarPTests.m; sourceTree = "<group>"; };
+		35409F4B19D384D200B52599 /* map_background.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = map_background.tiff; sourceTree = "<group>"; };
+		35409F4D19D38CF300B52599 /* redXCircle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redXCircle.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		35409F1819D3844C00B52599 = {
 			isa = PBXGroup;
 			children = (
+				35409F4A19D384C200B52599 /* assets */,
 				35409F2319D3844C00B52599 /* solarP */,
 				35409F3D19D3844D00B52599 /* solarPTests */,
 				35409F2219D3844C00B52599 /* Products */,
@@ -117,6 +122,15 @@
 				35409F3F19D3844D00B52599 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35409F4A19D384C200B52599 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				35409F4D19D38CF300B52599 /* redXCircle.jpg */,
+				35409F4B19D384D200B52599 /* map_background.tiff */,
+			);
+			name = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +216,8 @@
 				35409F3019D3844D00B52599 /* Main.storyboard in Resources */,
 				35409F3519D3844D00B52599 /* LaunchScreen.xib in Resources */,
 				35409F3219D3844D00B52599 /* Images.xcassets in Resources */,
+				35409F4E19D38CF300B52599 /* redXCircle.jpg in Resources */,
+				35409F4C19D384D200B52599 /* map_background.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +364,7 @@
 				INFOPLIST_FILE = solarP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -358,6 +375,7 @@
 				INFOPLIST_FILE = solarP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -414,6 +432,7 @@
 				35409F4619D3844D00B52599 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35409F4719D3844D00B52599 /* Build configuration list for PBXNativeTarget "solarPTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +441,7 @@
 				35409F4919D3844D00B52599 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

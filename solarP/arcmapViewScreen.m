@@ -25,6 +25,14 @@
     
     //enable wrap around
     [self.mapView enableWrapAround];
+    
+    // Zoom to envelop
+
+    NSLog(@"Trying to Zoom");
+    NSLog(@"SR: %@", self.mapView.spatialReference);
+    AGSEnvelope *envelope = [AGSEnvelope envelopeWithXmin:43.566667 ymin:-89.566667 xmax:49.383333  ymax:-97.2  spatialReference:self.mapView.spatialReference];
+    [self.mapView zoomToEnvelope:envelope animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

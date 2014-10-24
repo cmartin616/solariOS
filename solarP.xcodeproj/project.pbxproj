@@ -10,6 +10,8 @@
 		3511227B19F87614001B902D /* arcmapViewScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511227A19F87614001B902D /* arcmapViewScreen.m */; };
 		3511227E19F892D0001B902D /* reportView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511227D19F892D0001B902D /* reportView.m */; };
 		3511228019F899A3001B902D /* cat1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3511227F19F899A3001B902D /* cat1.jpg */; };
+		3511228319FA8D66001B902D /* modalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511228219FA8D66001B902D /* modalTest.m */; };
+		3511228619FA8D8C001B902D /* popoverTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511228519FA8D8C001B902D /* popoverTest.m */; };
 		35409F2719D3844C00B52599 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35409F2619D3844C00B52599 /* main.m */; };
 		35409F2A19D3844D00B52599 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35409F2919D3844D00B52599 /* AppDelegate.m */; };
 		35409F2D19D3844D00B52599 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35409F2C19D3844D00B52599 /* ViewController.m */; };
@@ -38,6 +40,10 @@
 		3511227C19F892D0001B902D /* reportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reportView.h; sourceTree = "<group>"; };
 		3511227D19F892D0001B902D /* reportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reportView.m; sourceTree = "<group>"; };
 		3511227F19F899A3001B902D /* cat1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat1.jpg; sourceTree = "<group>"; };
+		3511228119FA8D66001B902D /* modalTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modalTest.h; sourceTree = "<group>"; };
+		3511228219FA8D66001B902D /* modalTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modalTest.m; sourceTree = "<group>"; };
+		3511228419FA8D8C001B902D /* popoverTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popoverTest.h; sourceTree = "<group>"; };
+		3511228519FA8D8C001B902D /* popoverTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popoverTest.m; sourceTree = "<group>"; };
 		35409F2119D3844C00B52599 /* solarP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solarP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35409F2519D3844C00B52599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35409F2619D3844C00B52599 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -109,6 +115,10 @@
 				3511227A19F87614001B902D /* arcmapViewScreen.m */,
 				3511227C19F892D0001B902D /* reportView.h */,
 				3511227D19F892D0001B902D /* reportView.m */,
+				3511228119FA8D66001B902D /* modalTest.h */,
+				3511228219FA8D66001B902D /* modalTest.m */,
+				3511228419FA8D8C001B902D /* popoverTest.h */,
+				3511228519FA8D8C001B902D /* popoverTest.m */,
 			);
 			path = solarP;
 			sourceTree = "<group>";
@@ -254,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3511227B19F87614001B902D /* arcmapViewScreen.m in Sources */,
+				3511228319FA8D66001B902D /* modalTest.m in Sources */,
 				35409F2D19D3844D00B52599 /* ViewController.m in Sources */,
+				3511228619FA8D8C001B902D /* popoverTest.m in Sources */,
 				35409F2A19D3844D00B52599 /* AppDelegate.m in Sources */,
 				3511227E19F892D0001B902D /* reportView.m in Sources */,
 				35409F2719D3844C00B52599 /* main.m in Sources */,

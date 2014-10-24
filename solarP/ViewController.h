@@ -74,5 +74,12 @@
 - (IBAction)openSavePage:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *reportButton;
 
+
+// DEV TEST
+
+@property (weak, nonatomic) IBOutlet UIButton *popOver;
+@property (weak, nonatomic) IBOutlet UIButton *modal;
+
+
 @end
 

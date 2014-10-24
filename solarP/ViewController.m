@@ -22,7 +22,7 @@
     self.bookmarkPage.hidden = YES;
     self.menuPage.hidden = YES;
     self.helpPage.hidden = YES;
-    self.resultsPage.hidden = YES;
+    [self closeSideBar];
     //self.titleText.text = @"Solar Suitability";
     self.solarPIcon.text= @"SolarP";
     //[self createSplashScreen];
@@ -34,10 +34,32 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSLog(@"Prepare for segue called");
+}
+
+
+
 - (void)closeSideBar{
+    self.resultsPage.hidden = YES;
+    self.resultsLowerTab.hidden = YES;
+    self.histogramPage.hidden = YES;
+    self.histogramLowerTab.hidden = YES;
+    self.savePage.hidden = YES;
+    self.saveLowerTab.hidden = YES;
+}
+
+- (void)hideSideBarPages{
     self.resultsPage.hidden = YES;
     self.histogramPage.hidden = YES;
     self.savePage.hidden = YES;
+}
+
+- (void)loadSideBar{
+    self.resultsPage.hidden = NO;
+    self.resultsLowerTab.hidden = NO;
+    self.histogramLowerTab.hidden = NO;
+    self.saveLowerTab.hidden = NO;
 }
 
 /*- (void)createSplashScreen{
@@ -72,29 +94,31 @@ int mapShow=0;
 }
 - (IBAction)openResultsPage:(id)sender {
     if (self.resultsPage.hidden == YES){
-        NSLog(@"MENU HIDDEN");
+        NSLog(@"RESULTS MENU SHOWN");
         self.helpPage.hidden = YES;
+        [self hideSideBarPages];
         self.resultsPage.hidden = NO;
-    }else{
-        self.resultsPage.hidden = YES;
     }
 }
 - (IBAction)openHelpPage:(id)sender {
     if (self.helpPage.hidden == YES){
-        NSLog(@"MENU HIDDEN");
+        NSLog(@"HELP MENU SHOWN");
         self.resultsPage.hidden = YES;
+        self.savePage.hidden = YES;
         self.helpPage.hidden = NO;
     }else{
         self.helpPage.hidden = YES;
     }
 }
 - (IBAction)openHistogramPage:(id)sender {
-    [self closeSideBar];
+    NSLog(@"HISTOGRAM MENU SHOWN");
+    [self hideSideBarPages];
     self.histogramPage.hidden = NO;
 }
 
 - (IBAction)openSavePage:(id)sender {
-    [self closeSideBar];
+    NSLog(@"SAVE MENU SHOWN");
+    [self hideSideBarPages];
     self.savePage.hidden = NO;
     
 }
@@ -137,6 +161,12 @@ int mapShow=0;
 }
 - (IBAction)toggleResults:(id)sender {
     NSLog(@"RESULTS CLICK");
+    if (self.resultsPage.hidden == YES){
+        [self loadSideBar];
+    }else{
+        [self closeSideBar];
+    }
+    
 }
 
 - (void)updateDisplay{
@@ -157,4 +187,7 @@ int mapShow=0;
     }
 }
 
+- (IBAction)testButtonActivate:(id)sender {
+    NSLog(@"Test Button Clicked");
+}
 @end

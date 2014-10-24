@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ArcGIS/ArcGIS.h>
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *titleText;
+@property (weak, nonatomic) IBOutlet UIButton *mapGoTo;
+@property (weak, nonatomic) IBOutlet UIButton *testButton;
+- (IBAction)testButtonActivate:(id)sender;
 
 // BACKGROUND
 @property (weak, nonatomic) IBOutlet UIImageView *solarView;
@@ -68,6 +72,7 @@
 @property (weak, nonatomic) IBOutlet UIView *savePage;
 @property (weak, nonatomic) IBOutlet UIButton *saveLowerTab;
 - (IBAction)openSavePage:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *reportButton;
 
 @end
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wew-2k-Rpf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wew-2k-Rpf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -7,13 +7,13 @@
         <!--Main-->
         <scene sceneID="oZs-ZS-0uU">
             <objects>
-                <viewController title="Main" id="wew-2k-Rpf" sceneMemberID="viewController">
+                <viewController title="Main" id="wew-2k-Rpf" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GZV-rt-G94"/>
                         <viewControllerLayoutGuide type="bottom" id="Y4y-1R-Vpx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="j3A-GO-Z9R">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1m-1T-Rme">
@@ -31,6 +31,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAz-IW-QeG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -39,13 +40,13 @@
         <!--Menu-->
         <scene sceneID="Ra3-qV-7xb">
             <objects>
-                <viewController title="Menu" id="8bC-gR-G2Q" sceneMemberID="viewController">
+                <viewController title="Menu" id="8bC-gR-G2Q" customClass="menuView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qCM-58-zM0"/>
                         <viewControllerLayoutGuide type="bottom" id="7rI-9T-tjO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sGc-yv-u1i">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

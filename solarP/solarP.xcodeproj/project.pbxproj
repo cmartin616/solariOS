@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3511228A19FC461A001B902D /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3511228819FC461A001B902D /* TemplateIcon2x.png */; };
+		3511228D19FC46B6001B902D /* ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3511228B19FC46B6001B902D /* ViewController.h */; };
+		3511228E19FC46B6001B902D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511228C19FC46B6001B902D /* ViewController.m */; };
+		3511229119FC46DD001B902D /* menuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3511228F19FC46DD001B902D /* menuView.h */; };
+		3511229219FC46DD001B902D /* menuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511229019FC46DD001B902D /* menuView.m */; };
 		BD1246BD19FB45E7002A428C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1246BC19FB45E7002A428C /* Main.storyboard */; };
-		BDD66BAB19FB403A00E36F44 /* solarP.h in Headers */ = {isa = PBXBuildFile; fileRef = BDD66BAA19FB403A00E36F44 /* solarP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BDD66BB519FB403A00E36F44 /* solarPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD66BB419FB403A00E36F44 /* solarPTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3511228819FC461A001B902D /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
+		3511228B19FC46B6001B902D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3511228C19FC46B6001B902D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3511228F19FC46DD001B902D /* menuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = menuView.h; path = ../menuView.h; sourceTree = "<group>"; };
+		3511229019FC46DD001B902D /* menuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = menuView.m; path = ../menuView.m; sourceTree = "<group>"; };
 		BD1246BC19FB45E7002A428C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BDD66BA519FB403A00E36F44 /* solarP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = solarP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD66BA919FB403A00E36F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDD66BAA19FB403A00E36F44 /* solarP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = solarP.h; sourceTree = "<group>"; };
 		BDD66BB019FB403A00E36F44 /* solarPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = solarPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD66BB319FB403A00E36F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDD66BB419FB403A00E36F44 /* solarPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = solarPTests.m; sourceTree = "<group>"; };
@@ -62,8 +70,12 @@
 		BDD66BA719FB403A00E36F44 /* solarP */ = {
 			isa = PBXGroup;
 			children = (
-				BDD66BAA19FB403A00E36F44 /* solarP.h */,
+				3511228F19FC46DD001B902D /* menuView.h */,
+				3511229019FC46DD001B902D /* menuView.m */,
 				BD1246BC19FB45E7002A428C /* Main.storyboard */,
+				3511228B19FC46B6001B902D /* ViewController.h */,
+				3511228C19FC46B6001B902D /* ViewController.m */,
+				3511228819FC461A001B902D /* TemplateIcon2x.png */,
 				BDD66BA819FB403A00E36F44 /* Supporting Files */,
 			);
 			path = solarP;
@@ -101,7 +113,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD66BAB19FB403A00E36F44 /* solarP.h in Headers */,
+				3511229119FC46DD001B902D /* menuView.h in Headers */,
+				3511228D19FC46B6001B902D /* ViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3511228A19FC461A001B902D /* TemplateIcon2x.png in Resources */,
 				BD1246BD19FB45E7002A428C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3511228E19FC46B6001B902D /* ViewController.m in Sources */,
+				3511229219FC46DD001B902D /* menuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +328,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -329,7 +345,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

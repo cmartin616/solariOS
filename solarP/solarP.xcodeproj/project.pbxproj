@@ -13,6 +13,8 @@
 		3511229119FC46DD001B902D /* menuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3511228F19FC46DD001B902D /* menuView.h */; };
 		3511229219FC46DD001B902D /* menuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511229019FC46DD001B902D /* menuView.m */; };
 		35E843A019FC4D1E0094DE16 /* ArcGIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E8439F19FC4D1E0094DE16 /* ArcGIS.framework */; };
+		35E843A319FC4FC80094DE16 /* mapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 35E843A119FC4FC80094DE16 /* mapView.h */; };
+		35E843A419FC4FC80094DE16 /* mapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E843A219FC4FC80094DE16 /* mapView.m */; };
 		BD1246BD19FB45E7002A428C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1246BC19FB45E7002A428C /* Main.storyboard */; };
 		BDD66BB519FB403A00E36F44 /* solarPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD66BB419FB403A00E36F44 /* solarPTests.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 		3511228F19FC46DD001B902D /* menuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = menuView.h; path = ../menuView.h; sourceTree = "<group>"; };
 		3511229019FC46DD001B902D /* menuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = menuView.m; path = ../menuView.m; sourceTree = "<group>"; };
 		35E8439F19FC4D1E0094DE16 /* ArcGIS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ArcGIS.framework; sourceTree = "<group>"; };
+		35E843A119FC4FC80094DE16 /* mapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapView.h; sourceTree = "<group>"; };
+		35E843A219FC4FC80094DE16 /* mapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapView.m; sourceTree = "<group>"; };
 		BD1246BC19FB45E7002A428C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BDD66BA519FB403A00E36F44 /* solarP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = solarP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD66BA919FB403A00E36F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,10 +55,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35E843A519FC4FD10094DE16 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
 		BDD66B9B19FB403A00E36F44 = {
 			isa = PBXGroup;
 			children = (
 				35E8439F19FC4D1E0094DE16 /* ArcGIS.framework */,
+				35E843A519FC4FD10094DE16 /* assets */,
 				BDD66BA719FB403A00E36F44 /* solarP */,
 				BDD66BB119FB403A00E36F44 /* solarPTests */,
 				BDD66BA619FB403A00E36F44 /* Products */,
@@ -81,6 +93,8 @@
 				3511228C19FC46B6001B902D /* ViewController.m */,
 				3511228819FC461A001B902D /* TemplateIcon2x.png */,
 				BDD66BA819FB403A00E36F44 /* Supporting Files */,
+				35E843A119FC4FC80094DE16 /* mapView.h */,
+				35E843A219FC4FC80094DE16 /* mapView.m */,
 			);
 			path = solarP;
 			sourceTree = "<group>";
@@ -117,6 +131,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E843A319FC4FC80094DE16 /* mapView.h in Headers */,
 				3511229119FC46DD001B902D /* menuView.h in Headers */,
 				3511228D19FC46B6001B902D /* ViewController.h in Headers */,
 			);
@@ -219,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E843A419FC4FC80094DE16 /* mapView.m in Sources */,
 				3511228E19FC46B6001B902D /* ViewController.m in Sources */,
 				3511229219FC46DD001B902D /* menuView.m in Sources */,
 			);
